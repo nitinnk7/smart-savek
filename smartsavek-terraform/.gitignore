@@ -1,0 +1,53 @@
+#################################################
+# Terraform core
+#################################################
+
+# Local .terraform directory
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform plan output
+*.tfplan
+*.plan
+
+#################################################
+# Terraform variable files (often contain secrets)
+#################################################
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Keep example tfvars if needed
+!*.tfvars.example
+
+#################################################
+# Override files
+#################################################
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+#################################################
+# CLI configuration files
+#################################################
+
+.terraformrc
+terraform.rc
+
+#################################################
+# Terraform lock file
+#################################################
+
+# KEEP THIS if you're building modules or prod infra
+# Comment this line if you want to version lock providers
+#.terraform.lock.hcl
